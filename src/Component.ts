@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/indent */
 export abstract class Component {
+  // eslint-disable-next-line @typescript-eslint/parameter-properties
   selector: string;
   template!: string;
   element!: Element;
-
   constructor(selector: string) {
     this.selector = selector;
   }
