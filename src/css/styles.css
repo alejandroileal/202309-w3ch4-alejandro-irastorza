@@ -3,8 +3,8 @@
 }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
 }
 h1,
 h2,
@@ -109,7 +109,7 @@ img {
   height: 30px;
   font-size: inherit;
 }
-.form-block input[type="number"] {
+.form-block input[type='number'] {
   width: 50px;
 }
 .form-block button {
@@ -118,4 +118,8 @@ img {
   border: none;
   color: #fff;
   padding: 10px 20px;
+}
+
+.empty {
+  font-weight: 100;
 }
