@@ -74,12 +74,15 @@ const main = () => {
 
   const header = new Header('.container');
 
-  const unwatchedList = new UnwatchedCardList('.container');
+  const unwatchedList = new UnwatchedCardList(
+    '.container',
+    unwatchedMovies.length
+  );
   const unwatchedSeriesList = unwatchedMovies.map(
     (movie) => new Card('.series-list--unwatched', movie)
   );
 
-  const watchedList = new WatchedCardList('.container');
+  const watchedList = new WatchedCardList('.container', watchedMovies.length);
   const watchedSeriesList = watchedMovies.map(
     (movie) => new Card('.series-list--watched', movie)
   );
