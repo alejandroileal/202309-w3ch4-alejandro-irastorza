@@ -1,6 +1,6 @@
 import type { seriesStructure } from './types';
 
-export const series: seriesStructure = [
+export const series: seriesStructure[] = [
   {
     id: 1,
     name: 'The Sopranos',

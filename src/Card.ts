@@ -15,13 +15,6 @@ export class Card extends Component {
     console.log('Clicked');
   }
 
-  render() {
-    super.render();
-    this.element
-      .querySelector('i')
-      .addEventListener('click', this.handleX.bind(this));
-  }
-
   createTemplate() {
     let score;
 

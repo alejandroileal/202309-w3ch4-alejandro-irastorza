@@ -2,8 +2,6 @@ import { Card } from './Card';
 import { Header } from './Header';
 import { UnwatchedCardList } from './UnwatchedList';
 import { WatchedCardList } from './WatchedCardList';
-import { series } from './repo';
-import { type seriesStructure } from './types';
 
 const main = () => {
   console.log('Loaded main 😺');
@@ -85,6 +83,13 @@ const main = () => {
   const watchedList = new WatchedCardList('.container', watchedMovies.length);
   const watchedSeriesList = watchedMovies.map(
     (movie) => new Card('.series-list--watched', movie)
+  );
+  console.log(
+    header,
+    unwatchedList,
+    unwatchedSeriesList,
+    watchedList,
+    watchedSeriesList
   );
 };
 
